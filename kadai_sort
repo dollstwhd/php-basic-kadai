@@ -9,7 +9,7 @@
 <body>
     <p>
         <?php
-        function sort_2way(array $nums, bool $order): array {
+        function sort_2way_and_print(array $nums, bool $order): array {
             if ($order) {
                 sort($nums);
             } else {
@@ -28,8 +28,12 @@ rsort($nums);
 foreach ($nums as $value) {
     echo $value."<br>";
 }
+sort_2way_and_print($nums,true);
+    echo"<br>"
+sort_2way_and_print($nums,false);
         ?>
     </p>
 </body>
 
 </html>
+
